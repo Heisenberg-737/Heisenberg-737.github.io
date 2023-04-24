@@ -142,7 +142,7 @@ a.button-look {
     transition: .4s ease-in-out;
     visibility: hidden;
     opacity: 0;
-    transform: translate(0, 30px);
+    transform: translate(0, 35px);
 }
 
 .fade-up-box.show>.fade-up-item, .single-advantage-image.show .svg-fade, .single-advantage-image.show {
@@ -493,7 +493,7 @@ body.black .top-nav-sec.fixed-nav .top-nav {
     visibility: visible;
     opacity: 1;
     color: #ffffff;
-    transform: translate(0, 4);
+    transform: translate(0, 3);
 }
 
 .landing-section #particles-js {
@@ -514,7 +514,7 @@ body.black .top-nav-sec.fixed-nav .top-nav {
 .landing-section .bubble-wrapper {
     position: relative;
     width: 100%;
-    height: 85%;
+    height: 80%;
     background-color: #f9f0fe;
     /* background: linear-gradient(180deg, #A177B4 -49.22%, #F9F0FE 21.43%); */
     background: url("../images/pranay.jpeg");
@@ -606,7 +606,7 @@ body.black .top-nav-sec.fixed-nav .top-nav {
 .landing-section .landing-effect-right .laptop-wrapper {
     width: 80%;
     position: relative;
-    transform: translateY(47%);
+    transform: translateY(43%);
 }
   
 .landing-section .landing-effect-right img {
@@ -780,7 +780,7 @@ body.black .top-nav-sec.fixed-nav .top-nav {
 }
 
 .text-running-way-sec {
-    margin-top: 100px;
+    margin-top: 20%;
     width: 100%;
     display: flex;
     justify-content: center;
