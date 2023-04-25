@@ -1046,6 +1046,14 @@ body.black .top-nav-sec.fixed-nav .top-nav {
 }
 
 .three-board-section .advantages-detail .single-advantage>h4 {
+    font-size: var(--font32);
+    color: #232323;
+    font-weight: 400;
+    margin: 10px 0 20px;
+    text-align: center;
+}
+
+.three-board-section .advantages-detail .single-advantage>h3 {
     font-size: var(--font48);
     color: #232323;
     font-weight: 600;
