@@ -196,6 +196,20 @@
         width: 30px;
         height: 30px;
     }
+
+    .landing-section .bubble-wrapper {
+        position: relative;
+        width: 100%;
+        height: 80%;
+        background-color: #f9f0fe;
+        /* background: linear-gradient(180deg, #A177B4 -49.22%, #F9F0FE 21.43%); */
+        background: url("../images/pranay-mobile.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 50px;
+        clip-path: ellipse(92% 54% at 50% 43%);
+    }
+
     .landing-section .landing-left-text {
         height: fit-content;
         height: -moz-fit-content;
@@ -224,7 +238,15 @@
         align-items: center;
         overflow: hidden;
         cursor: none;
+        color: #ffc880;
     }
+
+    .phone-screen-wrapper .languages {
+        width: 17%;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
     .landing-section .landing-effect-right .phone-screen {
         width: 100%;
         height: 100%;
