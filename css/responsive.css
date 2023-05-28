@@ -20,10 +20,10 @@
         transition: 0s;
     }
     .three-board-section .single-board:nth-child(2) {
-        background-color: #F9F0FE;
+        background-color: #FEE2BE;
     }
     .three-board-section .single-board:nth-child(4) {
-        background-color: #F9F0FE;
+        background-color: #FEE2BE;
     }
     .three-board-section .single-board:nth-child(2) .single-advantage-image {
         box-shadow: none;
@@ -53,6 +53,65 @@
         transform: unset;
     }
     .single-advantage.fade-up-box.show>.fade-up-item, .single-advantage-image.show .svg-fade, .single-advantage-image.show {
+        visibility: visible;
+        opacity: 1;
+        transform: unset;
+    }
+
+    .three-board-section-2 .sticky-height-2 {
+        height: 450vh;
+    }
+    .three-board-section-2 .sticky-3-board-2 {
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+    .three-board-section-2 .sticky-relative-2 {
+        height: 100vh;
+        position: relative;
+    }
+    .three-board-section-2 .single-board-2 {
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        background-color: #fff;
+        width: 100%;
+        transition: 0s;
+    }
+    .three-board-section-2 .single-board-2:nth-child(1) {
+        background-color: #FEE2BE;
+    }
+    .three-board-section-2 .single-board-2:nth-child(3) {
+        background-color: #FEE2BE;
+    }
+    .three-board-section-2 .single-board-2:nth-child(1) .single-advantage-image {
+        box-shadow: none;
+    }
+    .three-board-section-2 .single-board-2:nth-child(3) .single-advantage-image {
+        box-shadow: none;
+    }
+    .three-board-section-2 .advantages-detail-2 .visitor-icon-list .single-visitor-icon>div {
+        background-color: #fff;
+    }
+    .three-board-section-2 .single-board-2:nth-child(1) {
+        z-index: 9;
+        box-shadow: 5px 5px 5px #D9D9D9;
+    }
+    .three-board-section-2 .single-board-2:nth-child(2) {
+        z-index: 8;
+        box-shadow: 5px 5px 5px #D9D9D9;
+    }
+    
+    .three-board-section-2 .single-board-2:nth-child(4) {
+        z-index: 6;
+    }
+    .single-advantage-2.fade-up-box .fade-up-item, .svg-fade, .single-advantage-image {
+        transition: unset;
+        visibility: visible;
+        opacity: 1;
+        transform: unset;
+    }
+    .single-advantage-2.fade-up-box.show>.fade-up-item, .single-advantage-image.show .svg-fade, .single-advantage-image.show {
         visibility: visible;
         opacity: 1;
         transform: unset;
@@ -526,6 +585,20 @@
     }
     .three-board-section .advantages-images-wrapper .single-advantage-image svg.ranking-right {
         left: 92%;
+    }
+
+    .three-board-section-2 .advantages-detail-2 {
+        height: auto;
+        margin-bottom: 50px;
+    }
+    .three-board-section-2 .advantages-detail-2 .single-advantage-2 {
+        height: auto;
+        margin-bottom: 50px;
+        align-items: center;
+    }
+
+    .three-board-section .three-board-desc h3 {
+        font-size: 55px;
     }
     .features-section .features-title {
         margin: 50px 0 0;

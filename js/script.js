@@ -443,6 +443,48 @@ $(window).on("load", function () {
     }
     new ThreeBoardEffect();
 
+    var that3Again;
+    class ThreeBoardEffectAgain {
+        constructor() {
+            that3Again = this;
+            that3Again.stickyHeight = $(".sticky-height-2").first();
+            if (window.innerWidth > 1000) {
+                that3Again.init();
+            }
+        }
+
+        init() {
+            $(window).scroll(that3Again.windowScroll);
+            that3Again.windowScroll();
+            $(window).resize(that3Again.windowRResize);
+            that3Again.windowScroll();
+        }
+
+        windowScroll() {
+            if (window.innerWidth > 1000) {
+                if ($(window).scrollTop() <= that3Again.stickyHeight.offset().top) {
+                    $(".single-board-2").css("transform", "translate(0px, 0px)");
+                } else if ($(window).scrollTop() >= that3Again.stickyHeight.offset().top && $(window).scrollTop() <= that3Again.stickyHeight.offset().top + window.innerHeight * 1.5) {
+                    var goUp = -($(window).scrollTop() - that3Again.stickyHeight.offset().top);
+                    goUp = goUp / 1.5 * 1;
+                    $(".single-board-2").eq(0).css("transform", "translate(0px, " + goUp + "px)");
+                    $(".single-board-2").eq(1).css("transform", "translate(0px, 0px)");
+                } else if ($(window).scrollTop() >= that3Again.stickyHeight.offset().top + window.innerHeight * 1.5 && $(window).scrollTop() <= that3Again.stickyHeight.offset().top + window.innerHeight * 3) {
+                    $(".single-board-2").eq(0).css("transform", "translate(0px, " + (-(window.innerHeight)) + "px)");
+                    var goUp = -($(window).scrollTop() - (that3Again.stickyHeight.offset().top + window.innerHeight * 1.5));
+                    goUp = goUp / 1.5 * 1;
+                    $(".single-board-2").eq(1).css("transform", "translate(0px, " + goUp + "px)");
+                } else if ($(window).scrollTop() >= that3Again.stickyHeight.offset().top + window.innerHeight * 3 && $(window).scrollTop() <= that3Again.stickyHeight.offset().top + window.innerHeight * 4.5) {
+                    $(".single-board-2").eq(0).css("transform", "translate(0px, " + (-(window.innerHeight)) + "px)");
+                    $(".single-board-2").eq(1).css("transform", "translate(0px, " + (-(window.innerHeight)) + "px)");
+                    var goUp = -($(window).scrollTop() - (that3Again.stickyHeight.offset().top + window.innerHeight * 3));
+                    goUp = goUp / 1.5 * 1;
+                } 
+            }
+        }
+    }
+    new ThreeBoardEffectAgain();
+
 
     var thatP;
     class PortfolioEffect {

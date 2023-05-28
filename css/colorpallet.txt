@@ -1,0 +1,6 @@
+color: #fda740;
+background-color: #FEE2BE;
+
+---------
+non-contrasty
+color: #ffc880;

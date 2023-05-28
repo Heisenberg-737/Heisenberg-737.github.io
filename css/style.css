@@ -337,7 +337,7 @@ body.black .top-nav-sec.fixed-nav .top-nav {
 }
 
 .top-nav .left-icon-area p span {
-    color: #ffc880;
+    color: #fda740;
 }
 
 .top-nav .center-btn-area {
@@ -423,12 +423,13 @@ body.black .top-nav-sec.fixed-nav .top-nav {
 
 .top-nav .right-btn-area .nav-get-started a {
     text-decoration: none;
-    color: #e8b674;
-    background-color: #ffe4c0;
+    color: #fda740;
+    background-color: #FEE2BE;
     padding: 10px 20px;
     border-radius: 20px;
     line-height: 20px;
     font-size: 14px;
+    font-weight: 600;
     white-space: nowrap;
     opacity: 1;
     visibility: visible;
@@ -586,13 +587,14 @@ body.black .top-nav-sec.fixed-nav .top-nav {
 
 .landing-section .landing-left-text .landing-get-started a {
     text-decoration: none;
-    color: #FFFFFF;
-    background-color: #e7b574;
+    color: #fda740;
+    background-color: #FEE2BE;
     padding: 10px 20px;
     border-radius: 20px;
     line-height: 20px;
     display: inline-block;
     font-size: var(--font14);
+    font-weight: 600;
 }
 
 .landing-section .landing-effect-right {
@@ -928,102 +930,10 @@ body.black .top-nav-sec.fixed-nav .top-nav {
 }
 
 .three-board-section .three-board-desc h3 {
-    font-size: var(--font60);
+    font-size: 70px;
     color: #232323;
-    font-weight: 600;
-    margin: 10px 0 20px;
-}
-
-.three-board-section .advantages-images-wrapper {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.three-board-section .single-advantage-image {
-    width: 74%;
-    border-radius: 32px;
-    background-color: #fff;
-    box-shadow: 5px 5px 10px #D9D9D9, -5px -5px 10px #FFFFFF;
-}
-
-.three-board-section .advantages-images-wrapper .single-advantage-image .svg-wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    /* display: none; */
-}
-
-.three-board-section .advantages-images-wrapper .single-advantage-image .svg-wrapper img.main-content {
-    width: 100%;
-    height: auto;
-    border-radius: 16px;
-}
-
-.three-board-section .advantages-images-wrapper .single-advantage-image svg.main-content {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.three-board-section .advantages-images-wrapper .single-advantage-image svg.percent-left {
-    width: 52%;
-    height: auto;
-    position: absolute;
-    top: 8%;
-    left: 10%;
-    transform: translate(-50%, -50%);
-}
-
-.three-board-section .advantages-images-wrapper .single-advantage-image svg.ranking-right {
-    width: 52%;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 95%;
-    transform: translate(-50%, -50%);
-}
-
-.three-board-section .advantages-images-wrapper .single-advantage-image svg.left-chat {
-    width: 76.9%;
-    height: auto;
-    position: absolute;
-    top: 49%;
-    left: 22%;
-    transform: translate(-50%, -50%);
-}
-
-.three-board-section .advantages-images-wrapper .single-advantage-image svg.right-earth {
-    width: 56%;
-    height: auto;
-    position: absolute;
-    top: 12%;
-    left: 90%;
-    transform: translate(-50%, -50%);
-}
-
-.three-board-section .advantages-images-wrapper .single-advantage-image svg.left-info-board {
-    width: 56%;
-    height: auto;
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    transform: translate(-50%, -50%);
-}
-
-.three-board-section .advantages-images-wrapper .single-advantage-image svg.right-rating {
-    width: 56%;
-    height: auto;
-    position: absolute;
-    top: 38%;
-    left: 95%;
-    transform: translate(-50%, -50%);
+    font-weight: 700;
+    margin: 5px 0 20px;
 }
 
 .three-board-section .advantages-detail {
@@ -1042,7 +952,7 @@ body.black .top-nav-sec.fixed-nav .top-nav {
 
 .three-board-section .advantages-detail .single-advantage>span {
     font-size: var(--font20);
-    color: #a177b4;
+    color: #fda740;
 }
 
 .three-board-section .advantages-detail .single-advantage>h4 {
@@ -1068,71 +978,46 @@ body.black .top-nav-sec.fixed-nav .top-nav {
     text-align: center;
 }
 
-.three-board-section .advantages-detail .marketing-cate {
+.three-board-section-2 .advantages-detail-2 {
     width: 100%;
-    height: auto;
-    padding: 0 50px;
 }
 
-.three-board-section .advantages-detail .marketing-cate .single-marketing {
+.three-board-section-2 .advantages-detail-2 .single-advantage-2 {
+    height: 100vh;
     width: 100%;
-    height: auto;
-    position: relative;
-    text-align: center;
-    outline: none;
+    padding: 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.three-board-section .advantages-detail .marketing-cate .single-marketing:before {
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
-    font-size: 120px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    opacity: .125;
-    color: #A177B4;
-}
-
-.three-board-section .advantages-detail .marketing-cate .single-marketing.affiliate:before {
-    content: "\f2b5";
-}
-
-.three-board-section .advantages-detail .marketing-cate .single-marketing.engagement:before {
-    content: "\f0eb";
-}
-
-.three-board-section .advantages-detail .marketing-cate .single-marketing.intercept:before {
-    content: "\f140";
-}
-
-.three-board-section .advantages-detail .marketing-cate .single-marketing.inbound:before {
-    content: "\f0a1";
-}
-
-.three-board-section .advantages-detail .marketing-cate .single-marketing span {
-    font-size: var(--font16);
-    font-weight: 600;
+.three-board-section-2 .advantages-detail-2 .single-advantage-2>span {
+    font-size: var(--font20);
     color: #a177b4;
-    display: inline-block;
-    margin-bottom: 10px;
 }
 
-.three-board-section .advantages-detail .marketing-cate .single-marketing p {
+.three-board-section-2 .advantages-detail-2 .single-advantage-2>h4 {
+    font-size: var(--font32);
+    color: #232323;
+    font-weight: 400;
+    margin: 10px 0 20px;
+    text-align: center;
+}
+
+.three-board-section-2 .advantages-detail-2 .single-advantage-2>h3 {
+    font-size: var(--font48);
+    color: #232323;
+    font-weight: 600;
+    margin: 10px 0 20px;
+    text-align: center;
+}
+
+.three-board-section-2 .advantages-detail-2 .single-advantage-2>p {
     font-size: var(--font16);
     color: #787878;
-}
-
-.three-board-section .advantages-detail .marketing-cate .single-marketing p strong {
-    font-size: var(--font16);
-    color: #a177b4;
-    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .prev-btn-marketing, .next-btn-marketing {
@@ -1485,11 +1370,11 @@ body.black .features-section .my-accordion-sec .single-accordion.active {
 }
 
 .portfolio-section .left-portfolio-text h3 {
-    font-size: var(--font60);
+    font-size: 70px;
     color: #232323;
-    font-weight: 600;
+    font-weight: 700;
     transition: .3s;
-    margin: 10px 0 20px;
+    margin: 85px 0 20px;
 }
 
 .portfolio-section .left-portfolio-text h3 i {
