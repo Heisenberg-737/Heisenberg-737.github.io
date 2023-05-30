@@ -1636,6 +1636,8 @@ body.black .single-portfolio span::before {
     width: 100%;
     height: 312px;
     margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
     overflow: hidden;
     background-color: #FFFFFF;
     margin-bottom: 140px;
