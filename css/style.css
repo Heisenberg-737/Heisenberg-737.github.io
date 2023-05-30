@@ -1672,6 +1672,209 @@ body.black .single-portfolio span::before {
     font-size: var(--font16);
 }
 
+.publication-section .left-publication-text h3 {
+    font-size: 70px;
+    color: #232323;
+    font-weight: 700;
+    transition: .3s;
+    margin: 85px 0 20px;
+    text-align: center;
+}
+
+body.black .left-publication-text h3 {
+    color: #fff;
+}
+
+.publication-section .horizontal-scroll-container-2 {
+    width: 100%;
+    height: 450vh;
+}
+
+.publication-section .sticky-wrapper {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.publication-section .relative-use {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.publication-section .all-publication {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: fit-content;
+    width: -moz-fit-content;
+    height: 80vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s; */
+}
+
+.publication-section .single-publication {
+    width: 553px;
+    height: 100%;
+    margin: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 85vw;
+}
+
+.publication-section .single-publication a.big-view {
+    display: block;
+    width: 100%;
+}
+
+.publication-section .single-publication .publication-img {
+    width: 100%;
+    height: 312px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    border-radius: 32px;
+    background-color: #FFFFFF;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.publication-section .single-publication .publication-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.publication-section .single-publication .publication-img:hover img {
+    width: 105%;
+    height: 105%;
+    /* special for website, my doc no need*/
+    margin: 0 0 0 -2.5%;
+}
+
+.publication-section .single-publication .publication-text {
+    padding-left: 16px;
+    overflow: hidden;
+    max-width: 100%;
+    height: 110px;
+}
+
+.publication-section .single-publication h6 {
+    margin-bottom: 0;
+    color: #232323;
+    font-size: var(--font26);
+    /* white-space: nowrap; */
+    text-overflow: ellipsis;
+    font-weight: 600;
+}
+
+.publication-section .single-publication p {
+    color: #787878;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: var(--font20);
+}
+
+.publication-section .single-publication span {
+    color: #232323;
+    margin-bottom: 16px;
+    font-size: var(--font20);
+    padding-left: 20px;
+    /* white-space: nowrap; */
+    /* text-overflow: ellipsis; */
+    position: relative;
+}
+
+.publication-section .single-publication span::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #232323;
+    position: absolute;
+    left: 0;
+    top: 58%;
+    transform: translateY(-50%);
+}
+
+body.black .single-publication h6 {
+    color: #fff;
+}
+
+body.black .single-publication p {
+    color: #919191;
+}
+
+body.black .single-publication span {
+    color: #FFFFFF;
+}
+
+body.black .single-publication span::before {
+    background-color: #fff;
+}
+
+.publication-section .show-all-publication {
+    width: 260px;
+    height: 100%;
+    margin: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.publication-section .show-all-publication .card-area {
+    width: 100%;
+    height: 312px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    margin-bottom: 140px;
+    border-radius: 32px;
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.publication-section .show-all-publication .card-area i {
+    font-size: var(--font32);
+    color: #232323;
+}
+
+.publication-section .show-all-publication .card-area p {
+    font-size: var(--font20);
+    color: #232323;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+.publication-section .show-all-publication .card-area a {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #222;
+    padding: 10px 20px;
+    border-radius: 20px;
+    line-height: 20px;
+    display: inline-block;
+    font-size: var(--font16);
+}
+
 .process-section {
     position: relative;
     width: 100%;

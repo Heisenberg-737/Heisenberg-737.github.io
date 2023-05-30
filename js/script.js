@@ -551,6 +551,121 @@ $(window).on("load", function () {
     }
     new PortfolioEffect();
 
+    var thatPub;
+    class PublicationEffect {
+      constructor() {
+        thatPub = this;
+        thatPub.portfolioWidth;
+        thatPub.transformNumber;
+        thatPub.scrollContainer = $(".horizontal-scroll-container-2").first();
+        thatPub.scrollPortfolio = $(".publication-section").first();
+        thatPub.scrollPricing = $(".pricing-section-2").first();
+        thatPub.init();
+      }
+    
+      init() {
+        $(window).scroll(thatPub.windowScroll);
+        thatPub.windowScroll();
+        $(window).resize(thatPub.windowResize);
+        thatPub.windowResize();
+      }
+    
+      windowScroll() {
+        // thatPub.changeBg();
+        if (
+          $(window).scrollTop() + window.innerHeight >=
+            thatPub.scrollContainer.offset().top &&
+          $(window).scrollTop() + window.innerHeight <=
+            thatPub.scrollContainer.offset().top +
+              thatPub.scrollContainer.outerHeight(true)
+        ) {
+          var scrollPx =
+            $(window).scrollTop() +
+            window.innerHeight -
+            thatPub.scrollContainer.offset().top;
+          var numberMove = Math.ceil(thatPub.transformNumber - scrollPx);
+          $(".horizontal-scroll-container-2 .all-publication").css(
+            "transform",
+            "translate(" + numberMove + "px, -50%)"
+          );
+        } else if (
+          $(window).scrollTop() + window.innerHeight <=
+          thatPub.scrollContainer.offset().top
+        ) {
+          $(".horizontal-scroll-container-2 .all-publication").css(
+            "transform",
+            "translate(" + thatPub.transformNumber + "px, -50%)"
+          );
+        } else if (
+          $(window).scrollTop() + window.innerHeight >=
+          thatPub.scrollContainer.offset().top +
+            thatPub.scrollContainer.outerHeight(true)
+        ) {
+          if (window.innerWidth > 600) {
+            $(".horizontal-scroll-container-2 .all-publication").css(
+              "transform",
+              "translate(" +
+                (thatPub.transformNumber -
+                  thatPub.portfolioWidth +
+                  Math.floor(window.innerWidth * 0.25)) +
+                "px, -50%)"
+            );
+          } else {
+            $(".horizontal-scroll-container-2 .all-publication").css(
+              "transform",
+              "translate(" +
+                (thatPub.transformNumber - thatPub.portfolioWidth) +
+                "px, -50%)"
+            );
+          }
+        }
+      }
+    
+      windowResize() {
+        if (window.innerWidth > 600) {
+          thatPub.portfolioWidth = $(
+            ".horizontal-scroll-container-2 .all-publication"
+          )
+            .first()
+            .outerWidth(true);
+          thatPub.scrollContainer.css(
+            "height",
+            thatPub.portfolioWidth - Math.floor(window.innerWidth * 0.25) + "px"
+          );
+          thatPub.transformNumber = Math.floor(window.innerWidth * 0.7);
+        } else {
+          $(".horizontal-scroll-container-2 .all-publication").css(
+            "margin-right",
+            (window.innerWidth - 260) / 2 + "px"
+          );
+          thatPub.portfolioWidth =
+            $(".horizontal-scroll-container-2 .all-publication")
+              .first()
+              .outerWidth(true) + 300;
+          thatPub.scrollContainer.css("height", thatPub.portfolioWidth + "px");
+          thatPub.transformNumber = Math.floor(window.innerWidth + 300);
+        }
+        $(".horizontal-scroll-container-2 .all-publication").css(
+          "transform",
+          "translate(" + thatPub.transformNumber + "px, -50%)"
+        );
+      }
+    
+    //   changeBg() {
+    //     if ($(window).scrollTop() - 100 >= thatPub.scrollPortfolio.offset().top && $(window).scrollTop() + window.innerHeight / 3 <= thatPub.scrollPricing.offset().top) {
+    //         $("body").css("backgroundColor", "#fff");
+    //         $("body").removeClass("black");
+    //     } else if ($(window).scrollTop() + window.innerHeight / 3 >= thatPub.scrollPricing.offset().top) {
+    //         $("body").css("backgroundColor", "#222");
+    //         $("body").addClass("black");
+    //     } else if ($(window).scrollTop() - 100 <= thatPub.scrollPortfolio.offset().top) {
+    //         $("body").css("backgroundColor", "#222");
+    //         $("body").addClass("black");
+    //     }
+    //   }
+    }
+    new PublicationEffect();
+
     var thatFNB;
     class FadeAndBubble {
         constructor() {
