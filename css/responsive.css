@@ -192,6 +192,24 @@
         visibility: visible;
         opacity: 1;
     }
+
+    .publication-section .left-publication-text h3 {
+        font-size: 60px;
+    }
+
+    .publication-section .single-publication h6 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .publication-section .single-publication span {
+        font-size: 11px;
+    }
+
+    .blog-section .single-blog h6 {
+        font-size: 30px;
+    }
+
     .features-section .features-e-commerce .features-desc {
         width: 100%;
     }

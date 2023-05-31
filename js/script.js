@@ -571,7 +571,6 @@ $(window).on("load", function () {
       }
     
       windowScroll() {
-        // thatPub.changeBg();
         if (
           $(window).scrollTop() + window.innerHeight >=
             thatPub.scrollContainer.offset().top &&
@@ -650,21 +649,114 @@ $(window).on("load", function () {
           "translate(" + thatPub.transformNumber + "px, -50%)"
         );
       }
-    
-    //   changeBg() {
-    //     if ($(window).scrollTop() - 100 >= thatPub.scrollPortfolio.offset().top && $(window).scrollTop() + window.innerHeight / 3 <= thatPub.scrollPricing.offset().top) {
-    //         $("body").css("backgroundColor", "#fff");
-    //         $("body").removeClass("black");
-    //     } else if ($(window).scrollTop() + window.innerHeight / 3 >= thatPub.scrollPricing.offset().top) {
-    //         $("body").css("backgroundColor", "#222");
-    //         $("body").addClass("black");
-    //     } else if ($(window).scrollTop() - 100 <= thatPub.scrollPortfolio.offset().top) {
-    //         $("body").css("backgroundColor", "#222");
-    //         $("body").addClass("black");
-    //     }
-    //   }
     }
     new PublicationEffect();
+
+    var thatBlog;
+    class BlogEffect {
+      constructor() {
+        thatBlog = this;
+        thatBlog.portfolioWidth;
+        thatBlog.transformNumber;
+        thatBlog.scrollContainer = $(".horizontal-scroll-container-3").first();
+        thatBlog.scrollPortfolio = $(".blog-section").first();
+        thatBlog.scrollPricing = $(".pricing-section-2").first();
+        thatBlog.init();
+      }
+
+      init() {
+        $(window).scroll(thatBlog.windowScroll);
+        thatBlog.windowScroll();
+        $(window).resize(thatBlog.windowResize);
+        thatBlog.windowResize();
+      }
+
+      windowScroll() {
+        if (
+          $(window).scrollTop() + window.innerHeight >=
+            thatBlog.scrollContainer.offset().top &&
+          $(window).scrollTop() + window.innerHeight <=
+            thatBlog.scrollContainer.offset().top +
+              thatBlog.scrollContainer.outerHeight(true)
+        ) {
+          var scrollPx =
+            $(window).scrollTop() +
+            window.innerHeight -
+            thatBlog.scrollContainer.offset().top;
+          var numberMove = Math.ceil(thatBlog.transformNumber - scrollPx);
+          $(".horizontal-scroll-container-3 .all-blog").css(
+            "transform",
+            "translate(" + numberMove + "px, -50%)"
+          );
+        } else if (
+          $(window).scrollTop() + window.innerHeight <=
+          thatBlog.scrollContainer.offset().top
+        ) {
+          $(".horizontal-scroll-container-3 .all-blog").css(
+            "transform",
+            "translate(" + thatBlog.transformNumber + "px, -50%)"
+          );
+        } else if (
+          $(window).scrollTop() + window.innerHeight >=
+          thatBlog.scrollContainer.offset().top +
+            thatBlog.scrollContainer.outerHeight(true)
+        ) {
+          if (window.innerWidth > 600) {
+            $(".horizontal-scroll-container-3 .all-blog").css(
+              "transform",
+              "translate(" +
+                (thatBlog.transformNumber -
+                  thatBlog.portfolioWidth +
+                  Math.floor(window.innerWidth * 0.25)) +
+                "px, -50%)"
+            );
+          } else {
+            $(".horizontal-scroll-container-3 .all-blog").css(
+              "transform",
+              "translate(" +
+                (thatBlog.transformNumber - thatBlog.portfolioWidth) +
+                "px, -50%)"
+            );
+          }
+        }
+      }
+
+      windowResize() {
+        if (window.innerWidth > 600) {
+          thatBlog.portfolioWidth = $(
+            ".horizontal-scroll-container-3 .all-blog"
+          )
+            .first()
+            .outerWidth(true);
+          thatBlog.scrollContainer.css(
+            "height",
+            thatBlog.portfolioWidth -
+              Math.floor(window.innerWidth * 0.25) +
+              "px"
+          );
+          thatBlog.transformNumber = Math.floor(window.innerWidth * 0.7);
+        } else {
+          $(".horizontal-scroll-container-3 .all-blog").css(
+            "margin-right",
+            (window.innerWidth - 260) / 2 + "px"
+          );
+          thatBlog.portfolioWidth =
+            $(".horizontal-scroll-container-3 .all-blog")
+              .first()
+              .outerWidth(true) + 300;
+          thatBlog.scrollContainer.css(
+            "height",
+            thatBlog.portfolioWidth + "px"
+          );
+          thatBlog.transformNumber = Math.floor(window.innerWidth + 300);
+        }
+        $(".horizontal-scroll-container-3 .all-blog").css(
+          "transform",
+          "translate(" + thatBlog.transformNumber + "px, -50%)"
+        );
+      }
+    }
+    new BlogEffect();
 
     var thatFNB;
     class FadeAndBubble {
