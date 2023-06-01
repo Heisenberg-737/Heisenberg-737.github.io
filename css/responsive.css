@@ -250,7 +250,7 @@
     }
 
     .publication-section .single-publication span {
-        font-size: 11px;
+        font-size: 12px;
     }
 
     .blog-section .single-blog h6 {
@@ -373,6 +373,7 @@
         height: fit-content;
         height: -moz-fit-content;
         position: relative;
+        transform: translateY(25%);
     }
 
     .landing-section .landing-effect-right .phone-screen-wrapper {
@@ -387,6 +388,10 @@
         overflow: hidden;
         cursor: none;
         color: #ffc880;
+    }
+
+    .text-running-way-sec {
+        margin-top: 35%;
     }
 
     .phone-screen-wrapper .languages {
@@ -736,6 +741,10 @@
 
     .three-board-section .three-board-desc h3 {
         font-size: 50px;
+    }
+
+    .portfolio-section .single-portfolio span {
+        font-size: 12px;
     }
 
     .features-section .features-title {
