@@ -1,7 +1,7 @@
 # Personal Portfolio
 Personal developer portfolio wesbite of Pranay Kothari.
 
-## Sections 🔥
+## Sections 🧵
 
 - About
 - Experience
