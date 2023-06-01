@@ -654,22 +654,22 @@
         display: none;
     }
     .process-section .process-scroll-area {
-        height: 420vh;
+        height: 140vh;
     }
     .process-section .process-moving-path {
-        height: 420vh;
+        height: 140vh;
     }
     .process-section .process-moving-path .process-path-svg-relative {
-        height: 405vh;
+        height: 135vh;
         margin-top: 0vh;
-        margin-bottom: 15vh;
+        /* margin-bottom: 15vh; */
     }
     .process-section .process-moving-path .process-path-svg-relative:before {
         display: none;
     }
     .process-section .process-moving-path .process-path-svg-relative .single-process {
         justify-content: space-evenly;
-        min-height: calc(420vh /5);
+        min-height: calc(140vh /3);
     }
     .process-section .process-moving-path .process-path-svg-relative .single-process .process-text-wrapper {
         width: 100%;
@@ -681,21 +681,14 @@
         height: auto;
     }
     .process-section .process-moving-path .process-path-svg-relative .single-process.process-1 {
-        top: 19%;
+        top: 40%;
         flex-direction: column;
     }
     .process-section .process-moving-path .process-path-svg-relative .single-process.process-2 {
-        top: 39%;
+        top: 80%;
         flex-direction: column;
     }
-    .process-section .process-moving-path .process-path-svg-relative .single-process.process-3 {
-        top: 59%;
-        flex-direction: column;
-    }
-    .process-section .process-moving-path .process-path-svg-relative .single-process.process-4 {
-        flex-direction: column;
-        top: 79%;
-    }
+
     .process-section .process-moving-path .process-path-svg-relative .single-process.process-1 .process-text-wrapper {
         padding-right: 0%;
         align-items: center;
