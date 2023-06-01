@@ -2467,9 +2467,9 @@ body:not(.black) .process-section .circle {
 }
 
 .contact-section {
-    margin-top: 100px;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    margin-top: 200px;
+    padding-top: 50px;
+    padding-bottom: 250px;
 }
 
 .contact-section h2 {
@@ -2505,7 +2505,7 @@ body.black .contact-section h2 a {
 }
 
 .contact-section h2 a:hover mark {
-    animation: 1s highlight ease-in-out forwards;
+    animation: 0.5s highlight ease-in-out forwards;
 }
 
 @keyframes highlight {

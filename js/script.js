@@ -543,7 +543,7 @@ $(window).on("load", function () {
             } else if ($(window).scrollTop() + window.innerHeight / 3 >= thatP.scrollPricing.offset().top) {
                 $("body").css("backgroundColor", "#fff");
                 $("body").removeClass("black");
-            } else if ($(window).scrollTop() - 100 <= thatP.scrollPortfolio.offset().top) {
+            } else if ($(window).scrollTop() - 150 <= thatP.scrollPortfolio.offset().top) {
                 $("body").css("backgroundColor", "#fff");
                 $("body").removeClass("black");
             }
