@@ -2394,11 +2394,11 @@ body:not(.black) .process-section .circle {
 }
 
 .process-section .process-moving-path .process-path-svg-relative .single-process.process-1 .process-text-wrapper::after {
-    content: "\f15c";
+    content: "\f1c9";
 }
 
 .process-section .process-moving-path .process-path-svg-relative .single-process.process-2 .process-text-wrapper::after {
-    content: "\f1c9";
+    content: "\f15c";
     left: unset;
     right: 0%;
 }
