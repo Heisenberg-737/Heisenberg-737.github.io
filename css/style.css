@@ -525,7 +525,7 @@ body.black .top-nav-sec.fixed-nav .top-nav {
     height: 80%;
     background-color: #f9f0fe;
     /* background: linear-gradient(180deg, #A177B4 -49.22%, #F9F0FE 21.43%); */
-    background: url("../images/pranay.jpeg");
+    background: url("../images/pranay-new.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 50px;
@@ -564,7 +564,7 @@ body.black .top-nav-sec.fixed-nav .top-nav {
     margin: 100px 0;
 }
 
-.landing-section .landing-left-text h2 {
+.landing-section .landing-left-text h1 {
     font-size: var(--font60);
     font-weight: 600;
     text-align: center;
@@ -572,11 +572,11 @@ body.black .top-nav-sec.fixed-nav .top-nav {
     color: #232323;
 }
 
-.landing-section .landing-left-text h2 span {
+.landing-section .landing-left-text h1 span {
     display: inline-block;
 }
 
-.landing-section .landing-left-text h2 .platinum-color {
+.landing-section .landing-left-text h1 .platinum-color {
     color: #ffc880;
 }
 

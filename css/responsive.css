@@ -348,7 +348,7 @@
         height: 80%;
         background-color: #f9f0fe;
         /* background: linear-gradient(180deg, #A177B4 -49.22%, #F9F0FE 21.43%); */
-        background: url("../images/pranay-mobile.jpeg");
+        background: url("../images/pranay-mobile-new.jpeg");
         background-size: cover;
         background-repeat: no-repeat;
         padding-top: 50px;
@@ -523,7 +523,7 @@
         padding-left: 0px;
     }
 
-    .landing-section .landing-effect-right .phone-screen .select-result .result-wrapper h2 {
+    .landing-section .landing-effect-right .phone-screen .select-result .result-wrapper h1 {
         font-size: var(--font24);
         font-weight: 600;
         color: #232323;
