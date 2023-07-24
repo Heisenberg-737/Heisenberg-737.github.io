@@ -2474,7 +2474,7 @@ body:not(.black) .process-section .circle {
     padding-bottom: 100px;
 }
 
-.contact-section h2 {
+.contact-section h6 {
     padding-left: 50px;
     font-size: var(--font60);
     color: #232323;
@@ -2482,21 +2482,21 @@ body:not(.black) .process-section .circle {
     line-height: 1.4;
 }
 
-.contact-section h2 a {
+.contact-section h6 a {
     color: #232323;
     text-decoration: none;
 }
 
-body.black .contact-section h2 {
+body.black .contact-section h6 {
     color: #ffffff;
 }
 
-body.black .contact-section h2 a {
+body.black .contact-section h6 a {
     color: #ffffff;
     text-decoration: none;
 }
 
-.contact-section h2 a mark {
+.contact-section h6 a mark {
     padding: 0;
     background-color: transparent;
     color: inherit;
@@ -2506,7 +2506,7 @@ body.black .contact-section h2 a {
     background-position: 0 100%;
 }
 
-.contact-section h2 a:hover mark {
+.contact-section h6 a:hover mark {
     animation: 0.5s highlight ease-in-out forwards;
 }
 
@@ -2516,11 +2516,11 @@ body.black .contact-section h2 a {
     }
 }
 
-.contact-section h2 a.contact-w-arrow {
+.contact-section h6 a.contact-w-arrow {
     position: relative;
 }
 
-.contact-section h2 a.contact-w-arrow::after {
+.contact-section h6 a.contact-w-arrow::after {
     content: "";
     position: absolute;
     width: 10%;
@@ -2529,7 +2529,7 @@ body.black .contact-section h2 a {
     left: 100%;
 }
 
-.contact-section h2 a.contact-w-arrow i {
+.contact-section h6 a.contact-w-arrow i {
     display: block;
     position: absolute;
     font-size: var(--font40);
@@ -2540,7 +2540,7 @@ body.black .contact-section h2 a {
     transition-duration: .5s;
 }
 
-.contact-section h2 a.contact-w-arrow:hover i {
+.contact-section h6 a.contact-w-arrow:hover i {
     transform: translateY(-50%) rotate(-45deg);
 }
 

@@ -970,12 +970,12 @@
         background-size: auto 90%;
     }
 
-    .contact-section h2 {
+    .contact-section h6 {
         font-size: var(--font32);
         padding: 0;
     }
 
-    .contact-section h2 a.contact-w-arrow i {
+    .contact-section h6 a.contact-w-arrow i {
         font-size: var(--font32);
     }
 
