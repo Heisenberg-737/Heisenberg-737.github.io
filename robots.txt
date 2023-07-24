@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /images/publication-1.png
+Disallow: /images/publication-2.png
+Disallow: /images/home-phone.png
+Disallow: /images/home-mac.png
+Disallow: /images/home-phone.png
+Disallow: /images/icon/
+
+Sitemap: https://pranaykothari.com/sitemap.xml
