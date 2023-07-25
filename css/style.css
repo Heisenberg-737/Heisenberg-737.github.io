@@ -2594,4 +2594,5 @@ body.black .contact-section h6 a {
     font-size: var(--font16);
     line-height: 26px;
     padding: 25px 110px 50px 110px;
+    text-align: center;
 }
