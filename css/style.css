@@ -430,7 +430,7 @@ body.black .top-nav-sec.fixed-nav .top-nav {
 
 .top-nav .right-btn-area .nav-get-started a {
     text-decoration: none;
-    color: #fda740;
+    color: #000000;
     background-color: #FEE2BE;
     padding: 10px 20px;
     border-radius: 20px;
@@ -578,7 +578,7 @@ body.black .top-nav-sec.fixed-nav .top-nav {
 }
 
 .landing-section .landing-left-text h1 .platinum-color {
-    color: #ffc880;
+    color: #FEE2BE;
 }
 
 .landing-section .landing-left-text p {
@@ -595,7 +595,7 @@ body.black .top-nav-sec.fixed-nav .top-nav {
 
 .landing-section .landing-left-text .landing-get-started a {
     text-decoration: none;
-    color: #fda740;
+    color: #000000;
     background-color: #FEE2BE;
     padding: 10px 20px;
     border-radius: 20px;
@@ -1610,7 +1610,7 @@ body.black .circular-text textPath {
     height: 110px;
 }
 
-.portfolio-section .single-portfolio h6 {
+.portfolio-section .single-portfolio h4 {
     margin-bottom: 0;
     color: #232323;
     font-size: var(--font26);
@@ -1649,7 +1649,7 @@ body.black .circular-text textPath {
     transform: translateY(-50%);
 } */
 
-body.black .single-portfolio h6 {
+body.black .single-portfolio h4 {
     color: #fff;
 }
 
@@ -1817,7 +1817,7 @@ body.black .left-publication-text h3 {
     height: 180px;
 }
 
-.publication-section .single-publication h6 {
+.publication-section .single-publication h4 {
     margin-bottom: 0;
     color: #232323;
     font-size: var(--font26);
@@ -1856,7 +1856,7 @@ body.black .left-publication-text h3 {
     transform: translateY(-50%);
 } */
 
-body.black .single-publication h6 {
+body.black .single-publication h4 {
     color: #fff;
 }
 
@@ -2015,7 +2015,7 @@ body.black .left-blog-text h3 {
     height: 180px;
 }
 
-.blog-section .single-blog h6 {
+.blog-section .single-blog h4 {
     margin-bottom: 0;
     color: #232323;
     font-size: 36px;
@@ -2038,7 +2038,7 @@ body.black .left-blog-text h3 {
     position: relative;
 }
 
-body.black .single-blog h6 {
+body.black .single-blog h4 {
     color: #fff;
 }
 
@@ -2347,7 +2347,7 @@ body:not(.black) .process-section .circle {
     font-weight: 600;
 }
 
-.process-section .process-moving-path .process-path-svg-relative .single-process .process-text-wrapper h2 {
+.process-section .process-moving-path .process-path-svg-relative .single-process .process-text-wrapper h5 {
     font-size: 34px;
     color: #fff;
     font-weight: 600;
