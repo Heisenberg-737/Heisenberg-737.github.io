@@ -995,7 +995,7 @@ body.black .top-nav-sec.fixed-nav .top-nav {
     color: #fda740;
 }
 
-.three-board-section .advantages-detail .single-advantage>h4 {
+.three-board-section .advantages-detail .single-advantage>h5 {
     font-size: var(--font32);
     color: #232323;
     font-weight: 400;
@@ -1003,7 +1003,7 @@ body.black .top-nav-sec.fixed-nav .top-nav {
     text-align: center;
 }
 
-.three-board-section .advantages-detail .single-advantage>h3 {
+.three-board-section .advantages-detail .single-advantage>h4 {
     font-size: var(--font48);
     color: #232323;
     font-weight: 600;
@@ -1037,7 +1037,7 @@ body.black .top-nav-sec.fixed-nav .top-nav {
     color: #fda740;
 }
 
-.three-board-section-2 .advantages-detail-2 .single-advantage-2>h4 {
+.three-board-section-2 .advantages-detail-2 .single-advantage-2>h5 {
     font-size: var(--font32);
     color: #232323;
     font-weight: 400;
@@ -1045,7 +1045,7 @@ body.black .top-nav-sec.fixed-nav .top-nav {
     text-align: center;
 }
 
-.three-board-section-2 .advantages-detail-2 .single-advantage-2>h3 {
+.three-board-section-2 .advantages-detail-2 .single-advantage-2>h4 {
     font-size: var(--font48);
     color: #232323;
     font-weight: 600;
