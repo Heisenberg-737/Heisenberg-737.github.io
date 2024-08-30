@@ -1820,7 +1820,7 @@ body.black .left-publication-text h3 {
 .publication-section .single-publication h4 {
     margin-bottom: 0;
     color: #232323;
-    font-size: var(--font26);
+    font-size: var(--font20);
     /* white-space: nowrap; */
     text-overflow: ellipsis;
     font-weight: 600;
@@ -1831,13 +1831,13 @@ body.black .left-publication-text h3 {
     margin-bottom: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
-    font-size: var(--font20);
+    font-size: var(--font18);
 }
 
 .publication-section .single-publication span {
     color: #232323;
     margin-bottom: 16px;
-    font-size: 14px;
+    font-size: 16px;
     /* padding-left: 20px; */
     /* white-space: nowrap; */
     /* text-overflow: ellipsis; */
@@ -2506,9 +2506,9 @@ body:not(.black) .process-section .circle {
 }
 
 .contact-section {
-    margin-top: 200px;
+    margin-top: 175px;
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 110px;
 }
 
 .contact-section h6 {
