@@ -325,6 +325,7 @@
 @media screen and (max-width: 767.98px) {
     .mobile-text-center {
         text-align: center;
+        font-size: var(--font16);
     }
 
     .landing-section .bubble-wrapper .bubble-s-20 {
