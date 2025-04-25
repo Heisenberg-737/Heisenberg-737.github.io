@@ -769,12 +769,12 @@ $(window).on("load", function () {
 
         setting() {
             $.each($(".landing-fade-up-box .landing-fade-up-item"), function (i, e) {
-                $(e).css("transitionDelay", (i / 3.5).toFixed(2) + "s");
+                $(e).css("transitionDelay", (i / 3.5).toFixed(3) + "s");
             })
 
             $.each(thatFNB.fadeBox, function (i, e) {
                 $.each($(e).children(".fade-up-item"), function (iItem, eItem) {
-                    $(eItem).css("transitionDelay", (iItem / 3.5).toFixed(2) + "s");
+                    $(eItem).css("transitionDelay", (iItem / 3.5).toFixed(3) + "s");
                 })
             });
         }
@@ -900,9 +900,9 @@ $(window).on("load", function () {
                 } else if (howMuchScroll >= thatProcess.top + thatProcess.height * 0.34 && howMuchScroll < thatProcess.top + thatProcess.height * 0.5) {
                     thatProcess.controlClass(false, false, "2");
                     $(".process-section .process-2").addClass("current").siblings().removeClass("current");
-                // } else if (howMuchScroll >= thatProcess.top + thatProcess.height * 0.5 && howMuchScroll < thatProcess.top + thatProcess.height * 0.66) {
-                //     thatProcess.controlClass(false, false, "3");
-                //     $(".process-section .process-3").addClass("current").siblings().removeClass("current");
+                } else if (howMuchScroll >= thatProcess.top + thatProcess.height * 0.5 && howMuchScroll < thatProcess.top + thatProcess.height * 0.66) {
+                    thatProcess.controlClass(false, false, "3");
+                    $(".process-section .process-3").addClass("current").siblings().removeClass("current");
                 // } else if (howMuchScroll >= thatProcess.top + thatProcess.height * 0.66 && howMuchScroll < thatProcess.top + thatProcess.height * 0.9) {
                 //     thatProcess.controlClass(false, false, "4");
                 //     $(".process-section .process-4").addClass("current").siblings().removeClass("current");
@@ -916,9 +916,9 @@ $(window).on("load", function () {
                 } else if (howMuchScroll >= thatProcess.top + thatProcess.height * 0.315 && howMuchScroll < thatProcess.top + thatProcess.height * 0.5) {
                     thatProcess.controlClass(false, false, "2");
                     $(".process-section .process-2").addClass("current").siblings().removeClass("current");
-                // } else if (howMuchScroll >= thatProcess.top + thatProcess.height * 0.5 && howMuchScroll < thatProcess.top + thatProcess.height * 0.685) {
-                //     thatProcess.controlClass(false, false, "3");
-                //     $(".process-section .process-3").addClass("current").siblings().removeClass("current");
+                } else if (howMuchScroll >= thatProcess.top + thatProcess.height * 0.5 && howMuchScroll < thatProcess.top + thatProcess.height * 0.685) {
+                    thatProcess.controlClass(false, false, "3");
+                    $(".process-section .process-3").addClass("current").siblings().removeClass("current");
                 // } else if (howMuchScroll >= thatProcess.top + thatProcess.height * 0.685 && howMuchScroll < thatProcess.top + thatProcess.height * 0.95) {
                 //     thatProcess.controlClass(false, false, "4");
                 //     $(".process-section .process-4").addClass("current").siblings().removeClass("current");

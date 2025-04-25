@@ -2406,6 +2406,10 @@ body:not(.black) .process-section .circle {
     flex-direction: row-reverse;
 }
 
+.process-section .process-moving-path .process-path-svg-relative .single-process.process-3 {
+    top: 60%;
+}
+
 .process-section .process-moving-path .process-path-svg-relative .single-process.process-1 .process-text-wrapper {
     padding-right: 8%;
     align-items: flex-end;
@@ -2431,13 +2435,17 @@ body:not(.black) .process-section .circle {
 }
 
 .process-section .process-moving-path .process-path-svg-relative .single-process.process-1 .process-text-wrapper::after {
-    content: "\f1c9";
+    content: "\f19d";
 }
 
 .process-section .process-moving-path .process-path-svg-relative .single-process.process-2 .process-text-wrapper::after {
-    content: "\f15c";
+    content: "\f19c";
     left: unset;
     right: 0%;
+}
+
+.process-section .process-moving-path .process-path-svg-relative .single-process.process-3 .process-text-wrapper::after {
+    content: "\f02d";
 }
 
 .process-section .process-moving-path .process-path-svg-relative .single-process.process-1 .process-image {
